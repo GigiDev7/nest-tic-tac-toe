@@ -8,7 +8,7 @@ export class Game {
   @Prop({ type: [String], required: true })
   board: string[];
 
-  @Prop({ required: true, type: String, default: '' })
+  @Prop({ type: String })
   winner: string;
 
   @Prop({ required: true, type: String })

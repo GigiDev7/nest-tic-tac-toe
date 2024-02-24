@@ -3,8 +3,9 @@ import { IsNotEmpty, IsString } from 'class-validator';
 export class GamePlayBodyDto {
   @IsNotEmpty()
   board: string[];
-  turn?: string;
-  winner?: string;
+
+  @IsString()
+  winner: string;
 }
 
 export class GamePlayQueryDto {
